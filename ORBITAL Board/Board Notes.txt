@@ -1,0 +1,6 @@
+BMP:
+	For I2C Communication: 
+		SDA -> GPIO 0
+		SCLK -> GPIO 1
+		
+Stepper:
