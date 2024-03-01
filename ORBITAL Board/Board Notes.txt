@@ -1,6 +1,48 @@
+7.2V to 6V DC/DC Converter:
+	- Select Pin LOW = USB input is priority. If priority input (USB) is not able to supply enough power, input two (battery becomes
+	priority)
+	- UVLO forces converter to stop accepting source power when input voltage dips below a user-defined limit 
+		- Vturnoff= 1.22(1 + RT/RB)
+		- For USB: Vturnoff = 4.7V -> RT = 350kOHM, RB = 100kOHM
+		- For Battery: Vturnoff = 6.4V -> RT = 510kOHM, RB = 100kOHM
+	- Output voltage is defined by user-set voltage divider:
+		- Vout = 1 + (R1/R2)
+		- We want Vout = 6V so R1 = 500kOHM and R2 = 100kOHM
+
+6V to 3.3V DC/DC Converter:
+	- Texas Instrument Chip -> Can generate optimized circuit design on TI website
+	- Output voltage defined by resistor values:
+		- Vout = .6(1 + (RT/RB))
+		- 3.3V Output -> RT = 225kOHM, RB = 50kOHM
+
+Stepper Motor:
+	- Operates with 6V power supply
+	- 4 pins connected to RP2040 for digital inputs:
+		- D2 -> Mode 1
+		- D3 -> Mode 2
+		- D4 -> DIR/Mode 4
+		- D5 -> STCK/Mode 3
+	- See datasheet for how to program Mode pins to create desired step outputs
+	- Other pins:
+		- D6 -> EN/FLT
+			- HIGH to enable motor
+			- LOW to disable
+			- IC automatically disables if a fault is reached (operating temperature too high, etc.)
+		- D7 -> STBY/RESET
+			- HIGH -> Normal consumption
+			- LOW -> Low power consumption
+			- SHOULD WE JUST TIE TO HIGH? OR DO WE WANT ABILITY FOR LOW CONSUMPTION?
+		- A3 -> REF
+			- Reference voltage for PWM circuitry
+			- Personally not sure what this does, but operating conditions are .1V - .5V
+	- Need to find external 4 pin out connection for 4 motor pin outputs
+
 BMP:
-	For I2C Communication: 
+	- For I2C Communication: 
 		SDA -> GPIO 0
 		SCLK -> GPIO 1
-		
-Stepper:
+	- Follows typical datasheet application
+
+Raspberry PI Reset:
+	- 
+	
