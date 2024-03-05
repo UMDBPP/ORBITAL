@@ -28,6 +28,7 @@ Stepper Motor:
 			- HIGH to enable motor
 			- LOW to disable
 			- IC automatically disables if a fault is reached (operating temperature too high, etc.)
+			- SHOULD WE TIE TO HIGH? OR DO WE WANT ABILITY TO DISABLE MOTOR?
 		- D7 -> STBY/RESET
 			- HIGH -> Normal consumption
 			- LOW -> Low power consumption
@@ -45,4 +46,27 @@ BMP:
 
 Raspberry PI Reset:
 	- 
+
+Flash:
+	- Connected to RP2040 based on datasheet specifications
+	- Is there a specific solder jumper that we want to use?
+
+SD Card:
+	- Need to check with data sheet, specifically for SPI communication with RP2040
+	- Datasheet?
+
+GPS:
+	- Are we sending correction data to GPS (RXD2_B / Pin26)?
+	- Current Pin Connections with RP2040:
+		- RXD_R (GPS Receiver) -> D8 (UART1 TX)
+		- TXD_R (GPS Transmitter) -> D( (UART1 RX)
+	- Need 3.3 V from both standard and backup sources
+	- Could also connect TXD_B, RXD_B
+		- Specifically, does RXD_B need to be driven to high (3.3) when idle?
+		- Or can we leave floating?
+	- Based on typical GPS application from datasheet, most pins can be left floating/not-connected
+
+
+
+
 	

@@ -5027,7 +5027,7 @@
     (property "Footprint" "GPS:PX1172RH" (at 431.8 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 431.8 50.8 0)
+    (property "Datasheet" "https://navspark.mybigcommerce.com/content/PX1172RH_DS.pdf" (at 431.8 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "14" (uuid dcb839c0-3999-42cb-90ed-86abfd1ac7fd))
@@ -7448,6 +7448,31 @@
     )
   )
 
+  (symbol (lib_id "power:GND") (at 351.79 27.94 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid a205f5f7-b452-4b7c-bbc5-25e2fbb0ccfa)
+    (property "Reference" "#PWR023" (at 351.79 21.59 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 351.79 22.86 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 351.79 27.94 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 351.79 27.94 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid f2886dab-ac71-47f8-ab18-27da565f796f))
+    (instances
+      (project "ORBITAL Board"
+        (path "/ed00f797-6c76-4d28-b3bc-c732d14de183"
+          (reference "#PWR023") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:GND") (at 166.37 57.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a41223cc-ac9b-479a-89c0-6561f160e9da)
@@ -7853,6 +7878,31 @@
       (project "ORBITAL Board"
         (path "/ed00f797-6c76-4d28-b3bc-c732d14de183"
           (reference "C41") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 346.71 27.94 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid b7045fb7-50e6-49e2-9aaa-0197c2428537)
+    (property "Reference" "#PWR024" (at 346.71 21.59 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 346.71 22.86 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 346.71 27.94 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 346.71 27.94 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 31fa4a9b-a23f-4693-9c84-846f7c6e3d04))
+    (instances
+      (project "ORBITAL Board"
+        (path "/ed00f797-6c76-4d28-b3bc-c732d14de183"
+          (reference "#PWR024") (unit 1)
         )
       )
     )
