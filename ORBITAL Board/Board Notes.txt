@@ -24,18 +24,14 @@ Stepper Motor:
 		- D5 -> STCK/Mode 3
 	- See datasheet for how to program Mode pins to create desired step outputs
 	- Other pins:
-		- D6 -> EN/FLT
-			- HIGH to enable motor
-			- LOW to disable
-			- IC automatically disables if a fault is reached (operating temperature too high, etc.)
-			- SHOULD WE TIE TO HIGH? OR DO WE WANT ABILITY TO DISABLE MOTOR?
-		- D7 -> STBY/RESET
-			- HIGH -> Normal consumption
-			- LOW -> Low power consumption
-			- SHOULD WE JUST TIE TO HIGH? OR DO WE WANT ABILITY FOR LOW CONSUMPTION?
-		- A3 -> REF
-			- Reference voltage for PWM circuitry
-			- Personally not sure what this does, but operating conditions are .1V - .5V
+		- EN/FLT -> Set to HIGH
+		- STBY/RESET -> Set to HIGH
+	- Setting VRef:
+		- Motors are rated .6A
+		- VRef = Rsnsx * Iload
+		- Typical application values for Rsnsx -> 330 mOhm
+		- Results in a Vref = .2V
+		- Supply via RP2040 1.1V output (voltage divider)
 	- Need to find external 4 pin out connection for 4 motor pin outputs
 
 BMP:
@@ -52,14 +48,13 @@ Flash:
 	- Is there a specific solder jumper that we want to use?
 
 SD Card:
-	- Need to check with data sheet, specifically for SPI communication with RP2040
-	- Datasheet?
+	- Fix to support SPI comms.
 
 GPS:
 	- Are we sending correction data to GPS (RXD2_B / Pin26)?
 	- Current Pin Connections with RP2040:
 		- RXD_R (GPS Receiver) -> D8 (UART1 TX)
-		- TXD_R (GPS Transmitter) -> D( (UART1 RX)
+		- TXD_R (GPS Transmitter) -> D9 (UART1 RX)
 	- Need 3.3 V from both standard and backup sources
 	- Could also connect TXD_B, RXD_B
 		- Specifically, does RXD_B need to be driven to high (3.3) when idle?
