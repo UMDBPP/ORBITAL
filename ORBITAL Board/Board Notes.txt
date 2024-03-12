@@ -48,7 +48,8 @@ Flash:
 	- Is there a specific solder jumper that we want to use?
 
 SD Card:
-	- Fix to support SPI comms.
+	- Currently hooked up to RP2040 via SPi
+	- See: https://electronics.stackexchange.com/questions/278852/sd-card-detect-in-spi-mode
 
 GPS:
 	- Are we sending correction data to GPS (RXD2_B / Pin26)?
