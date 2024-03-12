@@ -48,7 +48,7 @@ Flash:
 	- Is there a specific solder jumper that we want to use?
 
 SD Card:
-	- Currently hooked up to RP2040 via SPi
+	- Currently hooked up to RP2040 via SPI
 	- See: https://electronics.stackexchange.com/questions/278852/sd-card-detect-in-spi-mode
 
 GPS:
@@ -62,7 +62,13 @@ GPS:
 		- Or can we leave floating?
 	- Based on typical GPS application from datasheet, most pins can be left floating/not-connected
 
-
+TODO:
+	- Make footprint for LTC3118 (DC/DC Converter) - Rami
+	- Find 4 pin motor connector (and make footprint) - Madeleine
+	- Need switch for the board reset (and make footprint) - Madeleine
+	- Connect/wire components - Graham
+	- Update list to buy parts - Graham
+	- Find Diode - Rami
 
 
 	
