@@ -1,4 +1,4 @@
-22656913540647637
+22651789788842319
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -13,6 +13,13 @@ audio belton reverb
 0
 7
 7
+BackupBattery
+BAT_MS920SE-FL27E
+
+
+0
+2
+2
 Battery
 BatteryClip_Keystone_54_D16-19mm
 Battery clip for batteries with a diameter between 16-19 mm: https://www.keyelco.com/product.cfm/product_id/826
@@ -56090,77 +56097,21 @@ Fuse Fuseholder TR5 Littelfuse/Wickmann No. 460 No560
 0
 2
 2
-Gps
-BAT_MS920SE-FL27E
-
-
-0
-2
-2
-Gps
-C_0402_1005Metric
-Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator
-capacitor
-0
-2
-2
-Gps
-DFLS130L
-
-
-0
-2
-2
-Gps
+GPS
 DIO_RB400DFH_ROM-M
 
 RB420DFHT146 
 0
 3
 3
-Gps
-L_0402_1005Metric
-Inductor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
-inductor
-0
-2
-2
-Gps
+GPS
 PX1172RH
 
 
 0
 102
 101
-Gps
-PinHeader_1x09_P2.54mm_Vertical
-Through hole straight pin header, 1x09, 2.54mm pitch, single row
-Through hole pin header THT 1x09 2.54mm single row
-0
-9
-9
-Gps
-PinSocket_1x09_P2.54mm_Vertical
-Through hole straight socket strip, 1x09, 2.54mm pitch, single row (from Kicad 4.0.7), script generated
-Through hole socket strip THT 1x09 2.54mm single row
-0
-9
-9
-Gps
-R_0402_1005Metric
-Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator
-resistor
-0
-2
-2
-Gps
-RechargableMountedBattery
-
-
-0
-2
-1
-Gps
+GPS
 SMA_Molex_73251-1153_EdgeMount_Horizontal
 Molex SMA RF Connectors, Edge Mount, (http://www.molex.com/pdm_docs/sd/732511150_sd.pdf)
 sma edge
@@ -83782,6 +83733,13 @@ WiFi IEEE802.11 b/g/n
 0
 44
 44
+RP2040
+RP2040-QFN-56
+QFN, 56 Pin (http://www.cypress.com/file/416486/download#page=40), generated with kicad-footprint-generator ipc_dfn_qfn_generator.py
+QFN DFN_QFN
+0
+70
+57
 Relay_SMD
 Relay_2P2T_10x6mm_TE_IMxxG
 Signal Relay, 10x6mm, 2 Form C, Gull Wings, https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7F108-98001%7FZ.1%7Fpdf%7FEnglish%7FENG_DS_108-98001_Z.1.pdf
@@ -93113,3 +93071,24 @@ Varistor VF
 0
 2
 2
+footprints
+SOT_07SDRLR_TEX
+
+PTPS563206DRLR 
+0
+6
+6
+footprints
+SOT_07SDRLR_TEX-L
+
+PTPS563206DRLR 
+0
+6
+6
+footprints
+SOT_07SDRLR_TEX-M
+
+PTPS563206DRLR 
+0
+6
+6
