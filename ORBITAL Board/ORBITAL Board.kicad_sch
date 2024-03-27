@@ -5232,31 +5232,6 @@
     )
   )
 
-  (symbol (lib_id "power:GND") (at 26.67 73.66 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 1c31d99d-1db5-4f38-85aa-a4ae586916a2)
-    (property "Reference" "#PWR0126" (at 33.02 73.66 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 31.75 72.39 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 26.67 73.66 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 26.67 73.66 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 953eaaad-8347-4124-b322-0242ed03f31c))
-    (instances
-      (project "ORBITAL Board"
-        (path "/ed00f797-6c76-4d28-b3bc-c732d14de183"
-          (reference "#PWR0126") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "Device:R_Small") (at 138.43 69.85 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1c6773d0-8030-4bfa-8557-75168f735a3b)
@@ -6904,6 +6879,31 @@
     )
   )
 
+  (symbol (lib_id "power:+BATT") (at 26.67 73.66 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 88a32e93-87d1-4a02-bbcf-7133b649a14e)
+    (property "Reference" "#PWR027" (at 22.86 73.66 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+BATT" (at 32.4687 73.5736 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 26.67 73.66 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 26.67 73.66 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid b315844d-0274-4bbe-a9cb-37c95d800be1))
+    (instances
+      (project "ORBITAL Board"
+        (path "/ed00f797-6c76-4d28-b3bc-c732d14de183"
+          (reference "#PWR027") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Device:R_Small") (at 120.65 49.53 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8b3f7873-6909-4685-98c2-b4063f36d266)
@@ -7490,31 +7490,6 @@
     )
   )
 
-  (symbol (lib_id "power:+BATT") (at 26.67 76.2 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid a09c78df-c640-4627-8b64-2f1195d31ed6)
-    (property "Reference" "#PWR0125" (at 22.86 76.2 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+BATT" (at 29.21 80.01 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 26.67 76.2 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 26.67 76.2 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid dbc838f2-8859-4fab-811f-536699bb6fe6))
-    (instances
-      (project "ORBITAL Board"
-        (path "/ed00f797-6c76-4d28-b3bc-c732d14de183"
-          (reference "#PWR0125") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "power:GND") (at 351.79 27.94 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a205f5f7-b452-4b7c-bbc5-25e2fbb0ccfa)
@@ -7817,6 +7792,31 @@
       (project "ORBITAL Board"
         (path "/ed00f797-6c76-4d28-b3bc-c732d14de183"
           (reference "C8") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 26.67 76.2 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid aef8129f-a02e-4d9f-95e8-ff58ee0e225a)
+    (property "Reference" "#PWR028" (at 33.02 76.2 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 30.48 76.2 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "" (at 26.67 76.2 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 26.67 76.2 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 9f0c7411-e2c3-497b-8068-da2c7ee55bd7))
+    (instances
+      (project "ORBITAL Board"
+        (path "/ed00f797-6c76-4d28-b3bc-c732d14de183"
+          (reference "#PWR028") (unit 1)
         )
       )
     )
